@@ -469,7 +469,8 @@ img{
     height: 500px;
     object-fit: cover;
     border-radius: var(--border-radius);
-    opacity: 0;
+    /* opacity: 0; */
+    filter: brightness(0);
 }
 
 .about-img-two{
@@ -480,7 +481,8 @@ img{
     width: 100%;
     object-fit: cover;
     border-radius: var(--border-radius);
-    opacity: 0;
+    /* opacity: 0; */
+    filter: brightness(0);
 }
 
 .about-description-primary{

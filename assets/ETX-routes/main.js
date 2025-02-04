@@ -32,22 +32,22 @@ document.addEventListener("DOMContentLoaded", function() {
   })
 
   gsap.to(".about-img", {
-    // Set the parallax effect properties here
-    x: "200px", // Move the image by 100px downwards when it comes into view
-    opacity: 1, // Add opacity property with an end value of 1
-    ease: "none", // Optional: Set ease to "none" for a linear transition
+    // Parallax effect properties
+    x: "200px", 
+    filter: "brightness(1)", // Change opacity to filter with brightness(1) as the end value
+    ease: "none", 
 
     scrollTrigger: {
-      trigger: "#container-top", // Trigger the animation when the "about" section enters the viewport
-      start: "top bottom", // Start the animation when the top of the image reaches the bottom of the viewport
-      end: "bottom bottom", // End the animation when the bottom of the image reaches the top of the viewport
-      scrub: true // Enable scrubbing for smoother scrolling effect
+      trigger: "#container-top",
+      start: "top center", 
+      end: "bottom center", 
+      scrub: true 
     }
   });
 
    gsap.to(".about-img-two", {
      x: "-300px",
-     opacity: 1, 
+     filter: "brightness(1)", // Change opacity to filter with brightness(1) as the end value
      ease: "none",
      scrollTrigger: {
          trigger: "#container-bottom",
